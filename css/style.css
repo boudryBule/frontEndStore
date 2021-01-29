@@ -125,24 +125,49 @@ opcion lo ponemos con el hover */
 
 }
 
+/* Grid */
+
+.grid {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+  /*   column-gap: 2rem;
+    row-gap: 2rem; */
+    gap: 2rem; /* así lo puedes hacer igual en una linea */
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+}
+
 /* productos */
 
 .producto {
-
+    background-color: var(--primarioOscuro);
+    padding: 1rem; /* para que se quede por dentro de lo morado */
 }
 
 .producto__imagen {
-
-}
-
-.producto__informacion {
-
+    width: 100%; /* para que tome todo el espacio disponible dentro del div así lo haces responsive */
 }
 
 .producto__nombre{
-
+    font-size: 4rem;     
 }
 
 .producto__precio {
-    
+
+    font-size: 2.8rem;
+    color: var(--secundario);
+    line-height: 1.2rem; /* le cambiamos el interlineado para que esté mas junto */
+}
+
+.producto__nombre,
+.producto__precio {
+    font-family: var(--fuentePrincipal);
+    margin: 1rem 0; /* ya que tienen demasiada separacion */
+    text-align: center;
 }
