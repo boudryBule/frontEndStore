@@ -67,3 +67,42 @@ h2 {
 h3 {
     font-size: 2.4rem;
 }
+
+/* header */
+
+.header{
+    display:flex;
+    justify-content: center;
+}
+
+.header__logo {
+    margin: 3rem 0;
+}
+
+/* navegacion */
+
+.navegacion {
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* nueva funcion de flexbox para separar, antes sería poner en navegacion_enlace
+        margin-right: 2rem pero mejor el gap */
+}
+
+.navegacion__enlace {
+
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 3rem;
+
+}
+
+.navegacion__enlace--activo, /* vamos buscando que se quede iluminado cuando estamos en él, como es la misma
+opcion lo ponemos con el hover */
+.navegacion__enlace:hover{  /* para cuando pasamos el raton por encima */
+
+    color:var(--secundario);
+
+}
+
