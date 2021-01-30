@@ -205,6 +205,7 @@ opcion lo ponemos con el hover */
 
 /* Nosotros */
 
+<<<<<<< HEAD
 .nosotros{   
     display: grid;
     grid-template-rows: repeat(2, auto); /* si ponemos repeat (2, 1fr) se queda muy separado en pantallas pequeñas */
@@ -230,4 +231,18 @@ opcion lo ponemos con el hover */
     .nosotros__imagen {
         grid-column: 2 / 3;
     }
+=======
+.nosotros {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+}
+
+.nosotros__contenido {
+
+}
+
+.nosotros__imagen {
+
+>>>>>>> afa842c4a80035a31bf5b6958fd3d55c9cec3f0b
 }
