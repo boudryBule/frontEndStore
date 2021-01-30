@@ -171,3 +171,34 @@ opcion lo ponemos con el hover */
     margin: 1rem 0; /* ya que tienen demasiada separacion */
     text-align: center;
 }
+
+/* GRAFICOS */
+
+.grafico {
+
+    min-height: 30rem ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* grid-column; 1/3; se puede poner aqui porque se aplica en ambos */
+}
+
+.grafico--camisas{
+    grid-row: 2 / 3; /* indicamos que queremos colocarlo en la fila 2 y 3 */
+    grid-column: 1 / 3; /* en columnas va desde la 1 a la 3 */
+    background-image: url(../img/grafico1.jpg);
+}
+
+.grafico--node{
+    background-image: url(../img/grafico2.jpg);
+    grid-column: 1 / 3;
+    grid-row: 8 / 9; 
+}
+
+@media (min-width: 768px) {
+    
+    .grafico--node{
+
+        grid-row: 5 / 6;
+        grid-column: 2 / 4;
+    }
+}   
