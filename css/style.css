@@ -202,3 +202,19 @@ opcion lo ponemos con el hover */
         grid-column: 2 / 4;
     }
 }   
+
+/* Nosotros */
+
+.nosotros {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+}
+
+.nosotros__contenido {
+
+}
+
+.nosotros__imagen {
+
+}
