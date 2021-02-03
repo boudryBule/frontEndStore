@@ -150,9 +150,9 @@ opcion lo ponemos con el hover */
     padding: 1rem; /* para que se quede por dentro de lo morado */
 }
 
-/* .producto__imagen {
+.producto__imagen {
     width: 100%; /* para que tome todo el espacio disponible dentro del div así lo haces responsive 
-}*/
+}
  
 .producto__nombre{
     font-size: 4rem;     
@@ -278,13 +278,19 @@ opcion lo ponemos con el hover */
     
     /* se puede poner en una sola linea */
     border: 1rem solid var(--primarioOscuro);
-    background-color: transparent;
+    background-color: var(--primario);
     color: var(--blanco);
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     padding: 1rem;
     appearance: none;
 
+}
+
+@media (max-width: 768px) {
+    .formulario__campo { 
+      width: 100%;
+    }
 }
 
 .formulario__submit {
